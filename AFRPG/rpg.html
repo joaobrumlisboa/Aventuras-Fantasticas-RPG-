@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="btn-container">
+        <button id="oeste" onclick="checknav('O'); jogada(x, y)">Oeste</button>
+        <button id="norte" onclick="checknav('N'); jogada(x, y)">Norte</button>
+        <button id="sul" onclick="checknav('S'); jogada(x, y)">Sul</button>
+        <button id="leste" onclick="checknav('L'); jogada(x, y)">Leste</button>
+        <img id="quadro" src="imagens/Inicio.jpg">
+    </div>
+    <button id="iniciarBatalha" onclick="iniciarBatalha()" disabled>Começar Batalha</button>
+    <button id="Atacar" onclick="atacar()" disabled>Atacar</button>
+    <button id="Esquivar" onclick="esquivar()"  disabled>Esquivar</button>
+    <div id="posicao-jogador">
+        <table>
+            <tr>
+                <td id="A1"></td>
+                <td id="A2"></td>
+                <td id="A3"></td>
+                <td id="A4"></td>
+                <td id="A5"></td>
+            </tr>
+            <tr>
+                <td id="B1"></td>
+                <td id="B2"></td>
+                <td id="B3"></td>
+                <td id="B4"></td>
+                <td id="B5"></td>
+            </tr>
+            <tr>
+                <td id="C1"></td>
+                <td id="C2"></td>
+                <td id="C3"></td>
+                <td id="C4"></td>
+                <td id="C5"></td>
+            </tr>
+            <tr>
+                <td id="D1"></td>
+                <td id="D2"></td>
+                <td id="D3"></td>
+                <td id="D4"></td>
+                <td id="D5"></td>
+            </tr>
+            <tr>
+                <td id="E1"></td>
+                <td id="E2"></td>
+                <td id="E3"></td>
+                <td id="E4"></td>
+                <td id="E5"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="bordatexto">
+        <span id="texto"></span>
+    </div>
+    <div id="mochila">
+        <table>
+            <tr>
+                <th>Inventário</th>
+            </tr>
+            <tr>
+                <td id="item1"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="navegacao">Nav</div> 
+</body>
+<script>
+    mostrarnav()
+    jogada(x, y)
+</script>
+</html>

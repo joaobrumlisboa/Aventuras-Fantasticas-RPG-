@@ -1,0 +1,116 @@
+div#btn-container {
+    width: 500px;
+    height: 400px;
+    display: grid;
+    grid: 100px 300px 100px / 100px 450px 100px;
+    margin-left: 0;
+    margin-right: auto;
+    place-items: center center;
+  }
+  
+  button#oeste {
+    width: 75px;
+    height: 75px;
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+  
+  button#norte {
+    width: 75px;
+    height: 75px;
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  
+  button#sul {
+    width: 75px;
+    height: 75px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+  }
+  
+  button#leste {
+    width: 75px;
+    height: 75px;
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+  #quadro {
+    width: 400px;
+    height: 300px;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    border: solid black;
+  }
+  #bordatexto {
+    position: relative;
+    top: 150px;
+    border: solid black;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px;
+    max-width: 1000px;
+    width: auto;
+  }
+  table, th {
+    border: 1px solid black;
+  }
+  #mochila{
+    position: absolute;
+    top: 300px;
+    left: 721px;
+    
+  }
+ #navegacao {
+    border: solid black;
+    font-size: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 50px;
+    left: 700px;
+ }
+ .btnreset {
+  position: absolute;
+    top: 300px;
+    left: 950px;
+ } 
+ #posicao-jogador {
+  position:absolute;
+  top: 100px;
+  left: 1000px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.jogador {
+  
+  background-color: red; /* Cor de destaque para a posição do jogador */
+  color: white;
+  font-weight: bold;
+}
+#iniciarBatalha{
+  display: none;
+  position: absolute;
+  top:700px;
+}
+#Atacar{
+  display: none;
+  position: absolute;
+  top:700px; 
+}
+#Esquivar{
+  display: none;
+  position: absolute;
+  top:700px;
+  Left:100px;
+}
